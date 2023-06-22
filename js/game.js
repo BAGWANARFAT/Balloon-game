@@ -21,8 +21,8 @@ const pumpImage = new Image();
 pumpImage.src = "assets/pump.png";
 // Pump nozzle position
 const pumpNozzle = {
-  x: 1600,
-  y: canvas.height - 255,
+  x: 1300,
+  y: canvas.height - 360,
 };
 // Event listener for pump button
 document.addEventListener("mousedown", pumpBalloons);
@@ -122,7 +122,7 @@ function update() {
     ctx.fillText(balloon.letter, balloon.x, balloon.y + 8);
   });
   // Draw pump image
-  ctx.drawImage(pumpImage, 1500 , canvas.height - 400, 400, 400);
+  ctx.drawImage(pumpImage, 1200 , canvas.height - 500, 400, 400);
 
   requestAnimationFrame(update);
 }
